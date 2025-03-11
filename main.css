@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Average+Sans&family=Carrois+Gothic&display=swap');
+
+*{
+    font-family: "Carrois Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #dcf2f1;
+    width: 100%;
+    max-width: 960px;
+}
+
+body{
+    background-color: #0a1f1f;
+}
+
+header{
+    display: flex;
+    margin-top: 15vh;
+    margin-left: 15vw;
+    flex-direction: column;
+    max-width: 20vw;
+}
+
+header h1{
+    display: flex;
+    flex-direction: column;
+    font-size: 5vb;
+    font-weight: bold;
+    margin-bottom: 0.2vh;
+}
+
+#listaBtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#btnComecar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0a1f1f;
+    margin-top: 3vh;
+    background-color: #98e5e4;
+    width: 8vw;
+    height: 2vw;
+    border-radius: 8px;
+    box-shadow: 0 0 3px 1px #98e5e488;
+    animation: all ease 0.2s;
+}
+
+#btnComecar:hover{
+    background-color: #7bb9b8;
+    transform: translateY(-0.1vh);
+    transition: all ease 0.2s;
+}
+
+#btnCancelar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0a1f1f;
+    margin-top: 3vh;
+    background-color: #c53d3d;
+    width: 8vw;
+    height: 2vw;
+    border-radius: 8px;
+    box-shadow: 0 0 3px 1px #c53d3d8f;
+    animation: all ease 0.2s;
+}
+
+#btnCancelar:hover{
+    background-color: #a03030;
+    transform: translateY(-0.1vh);
+    transition: all ease 0.2s;
+}
+
+
+#areaLista{
+    width: 35vw;
+    background-color: #98e5e4;
+    display: none;
+    flex-direction: column;
+    padding: 1vw;
+    margin-top: 10vh;
+    margin-left: 15vw;
+    border-radius: 8px;
+}
+
+#form{
+    display: flex;
+    flex-direction: row;
+    color: #0a1f1f;
+    background-color: #98e5e4;
+}
+
+#grupoData{
+    display: flex;
+    flex-direction: column;
+    width: 11vw;
+    padding: 0.2vw;
+    color: #0a1f1f;
+    background-color: #dcf2f1;
+    border-radius: 8px;
+    margin-left: 1vw;
+}
+
+#grupoData input{
+    text-align: center;
+    outline: none;
+    color: #0a1f1f;
+    background-color: #dcf2f1;
+}
+
+#grupoData label{
+    font-weight: bold;
+    background-color: #dcf2f1;
+    color: #0a1f1f;
+}
+
+#nomeTarefa{
+    width: 8vw;
+    height: 6vh;
+    outline: none;
+    padding: 0.2vw;
+    background-color: #dcf2f1;
+    color: #0a1f1f;
+    border-radius: 8px;
+}
+
+#nomeTarefa::placeholder{
+    text-align: center;
+    color: #0a1f1f;
+}
+
+#btnAdicionar{
+    margin-left: 2vw;
+    width: 10vw;
+    height: 6vh;
+    color: #0a1f1f;
+    background-color: #dcf2f1;
+    border-radius: 8px;
+}
+
+#btnAdicionar:hover{
+    background-color: #c4dbda;
+    transition: all ease 0.3s;
+}
+
+#lista{
+    width: 33vw;
+    max-width: 33vw;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+    background-color: #98e5e4;
+}
+
+#lista p{
+    font-size: 18px;
+    color: #0a1f1f;
+    padding: 0.5vw;
+    border-radius: 8px;
+}
+
+#lista li{
+    display: flex;
+    flex-direction: row;
+    gap: 15vw;
+    margin-top: 0.2vw;
+    background-color: #0000002f;
+    border-radius: 8px;
+}
+
+#lista li:hover{
+    cursor: pointer;
+}
+
+.riscado{
+    text-decoration: line-through;
+    text-decoration-color: #0a1f1f;
+}

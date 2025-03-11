@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Lista de tarefas</title>
+</head>
+<body>
+    <header>
+        <h1>
+            <i class="fa-solid fa-list-ul" style="color: #dcf2f1;"></i>Lista de tarefas.
+        </h1>
+        <p>Organize sua rotina, conquiste seus objetivos e simplifique seu dia a dia com esta lista de tarefas prática e intuitiva. 
+            Aproveite e se organize agora!
+        </p>
+        <ul id="listaBtn">
+            <button id="btnComecar">Começar</button>
+            <button id="btnCancelar">Cancelar</button>
+        </ul>
+    </header>
+    <main>
+        <section id="areaLista">
+            <form id="form">
+                <input id="nomeTarefa" type="text" placeholder="Nome da tarefa">
+
+                <div id="grupoData">
+                    <label for="dataLimite">Data limite para conclusão:</label>
+                    <input id="dataLimite" type="date" placeholder="Dia limite para cumprir.">
+                </div>
+
+                <button id="btnAdicionar" type="submit">Adicionar +</button>
+
+            </form>
+            <ul id="lista">
+            </ul>
+        </section>
+    </main>
+    <script src="https://kit.fontawesome.com/4e80db4179.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
