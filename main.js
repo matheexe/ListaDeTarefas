@@ -2,7 +2,6 @@ $(document).ready(function(){
     
     $('#btnComecar').click(function(){
         $('#areaLista').slideDown();
-        
     })
 
     $('#btnCancelar').click(function(){
@@ -19,10 +18,12 @@ $(document).ready(function(){
         $(`<p>${data}</p>`).appendTo(newItem);
 
         newItem.appendTo('#lista')
+
+        $('#nomeTarefa').val('');
+        $('#dataLimite').val('');
     })
 
     $('#lista').on('click', 'li', function() {
-        
-        $('li').toggleClass('riscado');
+        $(this).toggleClass('riscado');
     })
 })
